@@ -10,7 +10,7 @@ type TQuery = {
   isFeatured?: boolean;
 };
 
-export const getProductList = async (query: TQuery): Promise<Product[]> => {
+export const getProducts = async (query: TQuery): Promise<Product[]> => {
   const url = queryString.stringifyUrl({
     url: URL,
     query: {
